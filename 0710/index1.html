@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>삼성전자 공채 입사지원폼</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Jiho Han" />
+        <meta name="keywords" content="삼성, 삼성전자, 공채, 입사지원" />
+        <meta name="description"
+         content="삼성전자 2023년도 공채 입사지원 페이지" />
+    </head>
+    <body>
+        <form action="apply.jsp" method="post">
+            성명 : 
+            <input type="text" name="userName" />
+            <br />
+            아이디 : 
+            <input type="text" name="userId" maxlength="10" />
+            <br />
+            비밀번호 : 
+            <input type="password" name="userPw" />
+            <br />
+            지원부서 : 
+            <select name="part">
+                <option value="">지원할 부서를 선택하세요.</option>
+                <option value="1">개발팀</option>
+                <option value="2">디자인팀</option>
+                <option value="3">총무팀</option>
+                <option value="4">인사팀</option>
+            </select>
+            <br />
+            성별 : 
+            <label>
+                <input type="radio" name="gender" value="1" />여자
+            </label>
+            <label>
+                <input type="radio" name="gender" value="0" />남자
+            </label>
+            <br />
+            희망연봉 : 
+            <input type="number" step="100" min="1900" max="4000" />만원
+            <br />
+            취미 : 
+            <label><input type="checkbox" name="hobby" value="cli" checked />등산</label>
+            <label><input type="checkbox" name="hobby" value="arc" />양궁</label>
+            <label><input type="checkbox" name="hobby" value="wrt" />서예</label>
+            <label><input type="checkbox" name="hobby" value="gam" />게임</label>
+            <label><input type="checkbox" name="hobby" value="rea" />독서</label>
+            <br />
+            생년월일 : 
+            <input type="date" name="birth" />
+            <br />
+            자기소개서:
+            <textarea name="essay" placeholder="300자 미만으로 작성하시오."></textarea>
+            <br />
+            국적 :
+            <select name="nation">
+                <option value="">국적을 선택하세요.</option>
+                <optgroup label="아시아">
+                    <option value="1">대한민국</option>
+                    <option value="2">일본</option>
+                    <option value="3">중국</option>
+                </optgroup>  
+                <optgroup label="아메리카">
+                    <option value="5">미국</option>
+                    <option value="6">멕시코</option>
+                    <option value="7">캐나다</option>
+                    <option value="8">케냐</option>
+                </optgroup>
+                <optgroup label="아프리카">
+                    <option value="8">케냐</option>
+                    <option value="9">가나</option>
+                    <option value="10">남아프리카공화국</option>
+                </optgroup>
+                <optgroup label="유럽">
+                    <option value="11">영국</option>
+                    <option value="12">이탈리아</option>
+                    <option value="13">프랑스</option>
+                </optgroup>
+            </select>
+            <button type="submit">제출하기</button>
+        </form>
+    </body>
+</html>
