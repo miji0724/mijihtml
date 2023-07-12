@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box1>p:first-child {
+    color: red;
+}
+
+#box1>p:nth-child(2) {
+    color: orange;
+}
+
+#box1>p:last-child {
+    color: yellow;
+}
+
+#box3>p:first-of-type {
+    color: red;
+}
+
+#resume tr:nth-child(2n) {     /* 짝수:even  홀수:2n-1,odd */
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+#p1, 
+.p2, 
+.p3 {color: red;}
+
+#parent>p {
+    color:blueviolet
+}
+
+#apply:hover {
+    cursor: grab;
+}
+#apply:active {
+    cursor: grabbing;
+}
+
+#resume td {             /* resume의 자손 모두 선택 */
+    border: 1px solid orange;
+}
+
+#resume{
+    width:500px;
+    margin: 0 auto;          
+}
+
+#resume.t1
+.title{
+    text-align:right;
+    padding-right: 10px;
+}
+
+.intro{
+    font: size 10px;
+}
+
+.need{
+    border-color:yellow;
+    border-width:3px;
+    border-radius: 8px;
+}
+
+.need:focus{
+    outline:none;     /* focus는 가상클래스. 마우스를 올렸을 때 */
+}
+
+select[name=part]{
+    width:172px;
+}
+
+input[type=date]{
+    width: 172px;
+    font-size: 20px;
+}
+
+input[type=number]{
+    width: 70px;
+}
+
+#selfIntro{
+    width: 350px;
+    height: 150px;
+    resize: none;
+    overflow: hidden;
+}
+
+#grade {
+    margin: 50px;
+    border-collapse: collapse;
+    border-top: 1px solid blue;
+}
+
+#grade th,
+#grade td {
+    border-bottom: 1px solid red;
+    border-right: 1px solid green;
+
+}
+
+#grade th:last-of-type,
+#grade td:last-of-type {
+    border-right: none;
+}
+
+
+#spec {
+    margin: 50px;
+    border-collapse: collapse;
+    border-top: 1px solid blue;
+}
+
+#spec th,
+#spec td {
+    padding: 0.2em;
+    border-bottom: 1px solid red;
+    border-right: 1px solid green;
+}
+
+#spec th {
+    background-color: antiquewhite;
+}
+
+#spec th:last-child,
+#spec td:last-child{
+    border-right: none;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>엘지전자 2023년도 공채 입사지원 페이지</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="miji Lee" />
+    <meta name="keywords" content="엘지,엘지전자,공채,입사지원,lg" />
+    <meta name="description" content="엘지전자 2023년도 공채 입사지원">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <table id="spec">
+        <tr>
+            <th>무게</th>
+            <td>21.5kg</td>
+            <th>가로</th>
+            <td>1,200mm</td>
+        </tr>
+        <tr>
+            <th>세로</th>
+            <td>200mm</td>
+            <th>소비전력</th>
+            <td>2W/h</td>
+        </tr>
+    </table>
+
+
+
+    <table id="grade">
+        <tr>
+            <th>성명</th>
+            <th>수학</th>
+            <th>과학</th>
+        </tr>
+        <tr>
+            <td>김태희</td>
+            <td>95</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>한지호</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+
+
+
+    <div id="box1">
+        <p>동해물과 백두산이</p>
+        <p>마르고 닳도록</p>
+        <p>하느님이 보우하사</p>
+        <p>우리나라 만세</p>
+    </div>
+
+    <div id="box2">
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+    </div>
+
+    <div id="box3">
+        <div>a</div>
+        <p>b</p>
+        <p>c</p>
+        <div>d</div>
+        <p>e</p>
+        <p>f</p>
+        <p>g</p>
+        <div>h</div>
+        <p>i</p>
+        <p>j</p>
+    </div>
+
+    <p id = "p1">djsdlhdjhjw whk</p>
+    <p class="p2">eihbenemnr</p>
+    <p class="p3">nxucgyuqj</p>
+    <div id="parent">
+        <p>kdhnkj nckjw</p>
+        <p>kdhnkj nckjw</p>
+        <span>nkcjhiajow</span>
+        <span>nkcjhiajow</span>
+    </div>
+
+
+    <a href="http://naver.com">링크</a>   <!--http >> hyper text transfer protocol-->  
+    <form id = "apply" action="apply.php" method="get">
+        <table id="resume">
+            <tr>
+                <td class="title">아이디</td>
+                <td><input type="text" name="userId" class="need"/></td>
+            </tr>
+            <tr>
+                <td class="title">비밀번호</td>
+                <td><input type="password" name="userPw" class="need"/></td>
+            </tr>
+            <tr>
+                <td class="title">성명</td>
+                <td><input type="text" name="userName" class="need"/></td>
+            </tr>
+            <tr>
+                <td class="title">생년월일</td>
+                <td><input type="date" name="userBirth" /></td>
+            </tr>
+            <tr>
+                <td class="title">지원부서</td>
+                <td>
+                    <select name="part">
+                        <option value="">지원부서 선택</option>
+                        <option value="1">개발팀</option>
+                        <option value="2">디자인팀</option>
+                        <option value="3">컨설팅팀</option>
+                        <option value="4">경영지원팀</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">희망연봉</td>
+                <td>
+                    <input type="number" name="annual" step="100" min="1000" max="10000">
+                    <input type="radio" name="consul">면접 후 결정            
+                </td>
+            </tr>
+            <tr>
+                <td class="title">국적</td>
+                <td>
+                      <input type="radio" name="national" value="1">내국인
+                      <input type="radio" name="national" value="0">외국인
+                </td>
+            </tr>
+            <tr>
+                <td class="title intro">자기소개서
+                    <br />(300자 미만)
+                </td>
+                <td>
+                    <textarea id="selfIntro">
+                </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">제출하기</button>
+            </tr>
+        </table>
+    </form>
+</body>
+</body>
+</html>

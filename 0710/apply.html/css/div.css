@@ -1,0 +1,60 @@
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#box1{
+
+    border: 1px solid red;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    }
+/* flex는 레이어로 구성, 현재 실무에서 태그를 배치하는 방법 중 하나.
+   display:flex가 적용된 태그는 부모태그(flex 컨테이너)라고 한다.
+   flex 적용된 태그의 하위태그들은 "flex아이템"이라고 한다.
+   
+   flex는 주축과 교차축에 의해 배치가 된다. 
+   주축 기준으로 배치는 justify-content이다.
+   justify-content에는 start, center,end,space-around,
+   space-between이 있다.
+   align-items에는 start,start,end 등이 있다. */
+
+
+.logo_box{
+    width: 200px;
+    float: left;    }/* 정렬 - 왼쪽 기준으로 정렬 시키기 */ 
+
+.logo_box img{
+    /* 클래스가 logo_box인 태그 밑에 있는 img 태그 선택 */
+    width: 130px;
+    height: 40px;
+}
+
+.menu_box {
+    width:calc( 100% - 200px );
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+#box2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  /* 여러줄 배치 하려면 wrap 설정*/
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.items{
+    width: 300px; 
+    /* overflow: hidden; */
+}
