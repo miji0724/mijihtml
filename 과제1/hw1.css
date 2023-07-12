@@ -37,7 +37,7 @@ ul{list-style: none;}     /* ul태그의 앞에 붙은 동그라미 없앰 */
 }
 
 #content .top{
-    background: rgba(0,0,200,0.3);
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* 사진 열과 열 사이의 간격 벌어짐 */
@@ -51,7 +51,7 @@ ul{list-style: none;}     /* ul태그의 앞에 붙은 동그라미 없앰 */
 }
 
 #content .bottom{
-    background: rgba(100,100,0,0.3);
+    
     display: flex;
     justify-content: space-between;   
 }
