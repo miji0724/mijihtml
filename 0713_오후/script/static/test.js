@@ -188,23 +188,52 @@
 
        주차한 시간이 총 몇 분인지 입력하고 요금 출력하기
 
+
 */
 
-var parkTime = Number(prompt("주차 시간을 입력하세요(분)"));
-var overFee1 = Math.floor((parkTime%60)/10)*100;         // 추가 시간 
-var overFee2 = Math.floor((parkTime-30)/10)*100;
+// var parkTime = Number(prompt("주차 시간을 입력하세요(분)"));
+// var overFee1 = Math.floor((parkTime%60)/10)*100;         // 추가 시간 
+// var overFee2 = Math.floor((parkTime-30)/10)*100;
 
-var parkFee = 0;
+// var parkFee = 0;
 
-if(parkTime >= 480){
-    parkFee = 5000;
-}else if(parkTime >= 240){
-    parkFee = 2500 + overFee1
-}else if(parkTime >= 120){
-    parkFee = 1500 + overFee1
-}else if(parkTime >= 40){
-    parkFee = 1000 + overFee2
-}else{
-    parkFee = 1000;
-}
-document.write("총 주차 시간은 " + parkTime + "분 이며, " + "주차 요금은 총 " + parkFee + "원 입니다.");
+// if(parkTime >= 480){
+//     parkFee = 5000;
+// }else if(parkTime >= 240){
+//     parkFee = 2500 + overFee1;
+// }else if(parkTime >= 120){
+//     parkFee = 1500 + overFee1;
+// }else if(parkTime >= 40){
+//     parkFee = 1000 + overFee2;
+// }else{
+//     parkFee = 1000;
+// }
+// document.write("총 주차 시간은 " + parkTime + "분 이며, " + "주차 요금은 총 " + parkFee + "원 입니다.");
+
+
+
+// var time = Number(prompt(" 주차 시간 "));
+// var cost = 1000;
+
+// if ( time >= 480){
+//     cost = 5000;
+//     time = 0;
+// }else if( time >= 240){
+//     cost = 2500;
+//     time = time - 240;
+// }else if( time >= 120){
+//     cost = 1500;
+//     time = time - 120
+// }else{
+//     time = time<40 ? 0 : - 30;
+// }
+
+// var price = cost + (parseInt(time/10)*100);
+// document.write("주차요금 : " + price);
+
+
+
+
+
+
+
