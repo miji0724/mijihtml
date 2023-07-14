@@ -149,30 +149,30 @@
 
 // 주사위 게임
 // 주사위는 던져졌다. 주사위의 숫자가 무엇인지 맞추시오.
-// 내가 입력한 숫자가 주사위의 숫자와 같다면 정답, 같지 않다묜 손목 이라고 출력
+// 내가 입력한 숫자가 주사위의 숫자와 같다면 정답, 같지 않다면 손목 이라고 출력
 
 
-var dice = Math.floor(Math.random()*6)+1;
+// var dice = Math.floor(Math.random()*6)+1;
 
-var user = inputNum("1부터 6 사이의 숫자를 입력하세요.");
+// var user = inputNum("1부터 6 사이의 숫자를 입력하세요.");
 
-var user = inputNum
-if (user == dice){
-    document.write("정답!");
-}else {
-    document.write("손목!");
-}
+// var user = inputNum
+// if (user == dice){
+//     document.write("정답!");
+// }else {
+//     document.write("손목!");
+// }
 
 
-function inputNum(str){
-    var a = prompt(str);
-    while( isNaN(a)){
-        alert("숫자만 입력 가능합니다.");
-        a = prompt(str);
-    }
-    a = Number(a);
-    return a;                                    // 숫자 외에 다른 것 입력했을 때 띄우는 함수 만들어 놓기
-}
+// function inputNum(str){
+//     var a = prompt(str);
+//     while( isNaN(a)){
+//         alert("숫자만 입력 가능합니다.");
+//         a = prompt(str);
+//     }
+//     a = Number(a);
+//     return a;                                    // 숫자 외에 다른 것 입력했을 때 띄우는 함수 만들어 놓기
+// }
 
 /*  
 
@@ -186,6 +186,25 @@ function inputNum(str){
 
    10분 초과시 100원 추가(10분당)
 
-       >> 주차한 시간이 총 몇 분인지 입력하고 요금 출력하기<<
-       
+       주차한 시간이 총 몇 분인지 입력하고 요금 출력하기
+
 */
+
+var parkTime = Number(prompt("주차 시간을 입력하세요(분)"));
+var overFee1 = Math.floor((parkTime%60)/10)*100;         // 추가 시간 
+var overFee2 = Math.floor((parkTime-30)/10)*100;
+
+var parkFee = 0;
+
+if(parkTime >= 480){
+    parkFee = 5000;
+}else if(parkTime >= 240){
+    parkFee = 2500 + overFee1
+}else if(parkTime >= 120){
+    parkFee = 1500 + overFee1
+}else if(parkTime >= 40){
+    parkFee = 1000 + overFee2
+}else{
+    parkFee = 1000;
+}
+document.write("총 주차 시간은 " + parkTime + "분 이며, " + "주차 요금은 총 " + parkFee + "원 입니다.");
